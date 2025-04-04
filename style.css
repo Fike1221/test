@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #753682, #bf2e34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  position: relative;
+  width: 100rem;
+  height: 60rem;
+  border-radius: 10px;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  background-color: #da7275;
+}
+
+.player {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.player--0 {
+  left: 0;
+}
+.player--1 {
+  right: 0;
+}
+.player--active {
+  background-color: #bcb5b5;
+  /* border-radius: 10px 0 0 10px; */
+}
+.name {
+  font-size: 4rem;
+  font-family: monospace;
+  margin-top: 8rem;
+}
+.score {
+  font-size: 4rem;
+  font-family: sans-serif;
+  color: #bf2e34;
+  margin-top: 6rem;
+}
+.current {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  background-color: #c91e2453;
+  text-align: center;
+  padding: 1.5rem 4rem;
+  border-radius: 5px;
+  color: #eee;
+}
+.current-label {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.current-score {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  position: absolute;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.btn-new {
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+.dice {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 14rem;
+  height: 16rem;
+  box-shadow: 0 5rem 5rem rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+}
+.btn-roll {
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+.btn-hold {
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
+
+.player--winner {
+  background-color: #0add0a;
+}
+
+.player--winner .name {
+  font-weight: 700;
+  color: #c7365f;
+}
+
+.hidden {
+  display: none;
+}
